@@ -1,0 +1,149 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  background-image: url(assets/img/fondo.jpg);
+}
+#header {
+  width: 100%;
+  min-width: 1024px;
+  height: 250px;
+}
+#logo {
+  margin: 0px auto;
+  width: 770px;
+  padding-top: 15px;
+}
+#logo img {
+  text-align: center;
+  width: 270px;
+  margin: 0px auto;
+  display: block;
+}
+#mensaje {
+  background-color:  rgb(187, 128, 226);
+  color: white;
+font-weight: bold;
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 100%;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+h1 {
+  font-size: 40px;
+  text-align: center;
+  color: #4b2383;
+}
+
+#primero {
+  height: 35px;
+  background:  rgb(187, 128, 226);
+  color: white;
+  text-transform: capitalize;
+  padding-right: 15px;
+  font-size: 20px;
+}
+#primero th {
+  padding: 5px;
+}
+
+.corte {
+  padding: 6px;
+  background-color: #838383;
+  font-size: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  color: white;
+}
+.calcular {
+  margin-left: 45px;
+}
+.boton {
+  width: 400px;
+}
+
+.parcial {
+  height: 35px;
+  font-size: 18px;
+}
+.quiz {
+  height: 35px;
+  font-size: 18px;
+}
+.trabajo {
+  height: 35px;
+  font-size: 18px;
+}
+.total {
+  height: 35px;
+  font-size: 18px;
+}
+.totally {
+  background-color: rgb(187, 128, 226);
+}
+
+#borrar {
+  display: inline-flex;
+  height: 50px;
+  background: grey;
+  color: azure;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  width: 105px;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+#borrar span {
+  position: relative;
+  z-index: 2;
+  transition: 0.3s ease all;
+}
+#borrar::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(187, 128, 226);
+  position: absolute;
+  z-index: 1;
+  top: -80px;
+  left: 0px;
+  transition: 0.3s ease-in-out all;
+}
+#borrar:hover::after {
+  top: 0;
+}
+main {
+  width: 800px;
+  margin: 0 auto;
+}
+
+table td {
+  padding: 5px 10px;
+  border: white 1px solid;
+}
+table {
+  text-transform: capitalize;
+  border: white 1px solid;
+  width: 100%;
+  background-color: #dfdbdb;
+}
+table th {
+  border: white 1px solid;
+}
+.border{
+  position:absolute;
+  background:none;
+  transition:all .5s ease-in-out;
+  border-radius: 5px;
+}
+
