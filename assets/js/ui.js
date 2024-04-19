@@ -19,9 +19,9 @@ export function cambiarColor(idResultado, resultado) {
   const resultadoElement = document.getElementById(idResultado);
   if (resultado >= 0 && resultado <= 2.9) {
     resultadoElement.style.background = "#930E0B";
-  } else if (resultado == 3 && resultado <= 3.4) {
+  } else if (resultado >= 3 && resultado < 3.5) {
     resultadoElement.style.background = "#FCE500";
-  } else if (resultado > 3.4 && resultado <= 5) {
+  } else if (resultado >= 3.5 && resultado <= 5) {
     resultadoElement.style.background = "#26FF00";
   }
 }

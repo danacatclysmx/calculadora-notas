@@ -18,3 +18,8 @@ export const porcentajes = {
     general: 0.4,
   },
 };
+export const porcentajesCorte = {
+  quiz: 0.17,
+  trabajo: 0.17,
+  parcial: 0.66,
+};
