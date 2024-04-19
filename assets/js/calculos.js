@@ -1,4 +1,4 @@
-import { porcentajes } from "./datos.js";
+import { porcentajes, porcentajesCorte } from "./datos.js";
 export function calcularPromedios(notas) {
   const promedioPrimerCorte = calcularPromedioCorte(
     notas.parcial1,
@@ -54,7 +54,9 @@ export function calcularPromedioFinal(
   );
 }
 function calcularPromedioCorte(notaParcial, notaQuiz, notaTrabajo) {
-  const promedio = (notaParcial + notaQuiz + notaTrabajo) / 3;
+  const { quiz, trabajo, parcial } = porcentajesCorte;
+  const promedio =
+    notaParcial * parcial + notaQuiz * quiz + notaTrabajo * trabajo;
   return promedio;
 }
 export function calcularGenerales(notas) {
@@ -89,6 +91,7 @@ function calcularGeneralCorte(notaParcial, notaQuiz, notaTrabajo, corte) {
   const generalTrabajo = notaTrabajo * porcentajes[corte].trabajo;
   return { generalParcial, generalQuiz, generalTrabajo };
 }
+
 function calcularPromedioCorteGeneral(
   notaParcial,
   notaQuiz,
